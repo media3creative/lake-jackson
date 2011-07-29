@@ -10,22 +10,20 @@
 
 #header
 	@extend .box
-	@extend .bg-gradient-primary
 	width: 100%
 	height: $header-height
 	margin: 0
 	padding: 0
-	border-bottom: 2px solid $header-border
 .center
 	@extend .center-container
-	@extend .bg-gradient-primary
 	@extend .box
 	#logo1
 		@extend .box
-		position: absolute
-		top: (($header-height - $logoH)/2)
-		left: (5px	+ $v-gap)
-		margin: 0
+		position: relative
+		+float-left
+		clear: right
+		left: (15px	+ $v-gap)
+		margin: ($corner-radius * 2) 0 ($corner-radius)
 		a
 			display: block
 			margin: 0
@@ -43,10 +41,17 @@
 			
 // NAVMENU
 ul#topnav
+	@extend .clearfix
+	@extend .bg-gradient-primary
+	@extend .box
+	@extend .corner-all
 	font-family: "EmbedFont-1"
-	+float-right
-	margin: 20px ($v-gap) 0 ($logoW + 5px + $h-gap)
-	padding: 0
+	position: relative
+	//+float-left
+	clear: left
+	width: $inside-width
+	margin: ($corner-radius) auto 0 auto
+	padding: 0 ($corner-radius)
 	color: $nav-text
 	font-size: 11px
 	letter-spacing: 0.05em
@@ -65,17 +70,17 @@ ul#topnav li a
 
 ul#topnav a.topnav
 	@extend .box
-	margin: 6px -1px 0 0
-	padding: .5em 2em .4em 2em
+	width: $nav-width
+	margin: 0
+	padding: 15px 0
+	color: inherit
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
-	border-left: 1px solid $nav-lines
-	border-right: 1px solid $nav-lines
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
 	color: $nav-text-hover
-	//background: url("../images/nav/nav_bg.png") repeat
+	background: url("../images/nav_bg.png") repeat
  
 ul#topnav li .sub 
 	@extend .corner-bottom

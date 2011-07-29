@@ -19,12 +19,12 @@
 		padding: $v-gap 0 ($v-gap/2)
 		h1
 			@extend .box
+			@extend .corner-top-left
 			font-family: "EmbedFont-1"
-			width: $inside-width
-			margin: 15px 0 0 0
-			padding: 0 ($h-gap) 0.2em 300px
+			margin: 200px 0 0 500px
+			padding: 0 ($h-gap) 0.2em
 			color: $image-slider-title
-			//background: $primary
+			background: url(/images/tp_bg.png) repeat
 			//opacity: 0.85
 			font-size: 30px
 			font-weight: 100
@@ -37,15 +37,14 @@
 				//opacity: 0.75
 		h3
 			@extend .font-base
-			//@extend .corner-right
+			@extend .corner-bottom-left
 			@extend .box
 			position: relative
 			top: 0px
-			width: $inside-width
-			margin: 0 0 6px 0
-			padding: 0.4em ($h-gap) 0.4em 450px
+			margin: 0 0 6px 500px
+			padding: 0.4em ($h-gap) 0.4em
 			color: $gray-med
-			//background: $secondary
+			background: url(/images/tp_bg.png) repeat
 			//opacity: 0.85
 			font-size: 14px
 			font-weight: 200
@@ -134,7 +133,7 @@
 	z-index: 8
 
 .nivo-caption p 
-	padding: 5px
+	padding: 0
 	margin: 0
 
 .nivo-caption a 

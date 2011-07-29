@@ -1,0 +1,50 @@
+- @title = " | Page5"
+- @subtitle = ""
+- @body_class = "five"
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#two.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-5.jpg"}
+
+
+
+.body
+  .center
+    .content
+      #five.sidebar.left
+        .text
+          %h1 Contact Us
+          %p 
+            %sub PHONE
+            %br
+            (979) 299-1200
+          %p  
+            %sub EMAIL
+            %br
+            name@domain.com
+          %p
+            %sub ADDRESS
+            %sub=" | "
+            %sub
+              %a{:href => "http://maps.google.com/maps?q=135+Oyster+Creek+Dr.+Suite+W+Lake+Jackson,+TX+77556&hl=en&sll=37.0625,-95.677068&sspn=49.310476,124.980469&z=17"} MAP
+            %br
+            135 Oyster Creek Dr. Suite W
+            %br
+            Lake Jackson, TX 77556
+          
+          %p
+            %a{:href => "http://maps.google.com/maps?q=135+Oyster+Creek+Dr.+Suite+W+Lake+Jackson,+TX+77556&hl=en&sll=37.0625,-95.677068&sspn=49.310476,124.980469&z=17", :target => "_blank"}
+              %img.map{:src => "/images/map.png", :alt => "Map to Lake Jackson Family Practice"}/
+      
+
+      #five.main
+        .content
+          %a{:name => "anchor1"}
+          .section.no-image
+            %h1 Request an Appointment
+            %p.contact-form
+              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "635", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/r7p2p5/", :width => "100%", :border => "none"}       

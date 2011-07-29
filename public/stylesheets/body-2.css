@@ -14,15 +14,15 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
 .bg-gradient-primary, .button p.link, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#4761c4), to(#283a7d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #4761c4, #283a7d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +31,9 @@
 
 .bg-gradient-reverse, .button p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#283a7d), to(#4761c4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #283a7d, #4761c4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,20 +42,33 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #de3141, #be1e2d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
+.bg-gradient-accent {
+  /* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left top, left bottom, from(#948c79), to(#797261));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(top, #948c79, #797261);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#948c79, endColorstr=#787162);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#948c79, endColorstr=#787162)";
+}
+
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  color: black;
   background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  color: black;
   background: #b4d5ff;
 }
 
@@ -217,15 +230,15 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
 .bg-gradient-primary, .button p.link, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#4761c4), to(#283a7d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #4761c4, #283a7d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +247,9 @@ b {
 
 .bg-gradient-reverse, .button p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#283a7d), to(#4761c4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #283a7d, #4761c4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,20 +258,33 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#de3141), to(#be1e2d));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #de3141, #be1e2d);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
 }
 
+.bg-gradient-accent {
+  /* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left top, left bottom, from(#948c79), to(#797261));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(top, #948c79, #797261);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#948c79, endColorstr=#787162);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#948c79, endColorstr=#787162)";
+}
+
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  color: black;
   background: #b4d5ff;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  color: black;
   background: #b4d5ff;
 }
 
@@ -404,7 +430,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .subnav h1, .text h1, .button h1, .form h1 {
   font-family: "EmbedFont-1";
   position: relative;
-  color: #006bc7;
+  color: #4761c4;
   background: transparent;
   width: 220px;
   margin: 0 auto;
@@ -448,7 +474,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 5px;
   width: 7px;
   height: 7px;
-  background: #d8a41c;
+  background: #be1e2d;
   font-size: 11px;
   text-align: center;
 }
@@ -464,10 +490,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .link p a {
   font-size: 12px;
-  color: #d8a41c;
+  color: #be1e2d;
 }
 .link p a:hover {
-  color: #d8a41c;
+  color: #be1e2d;
   text-decoration: none;
 }
 
@@ -492,7 +518,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
   color: white;
   text-align: center;
-  border: 1px solid #003461;
+  border: 1px solid #283a7d;
 }
 .button p.link a {
   display: block;
@@ -523,7 +549,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section, .main .content .main {
   position: relative;
   padding: 0 0 30px 0;
-  border-bottom: 1px dotted #d8a41c;
+  border-bottom: 1px dotted #be1e2d;
 }
 .main .content .section:last-child, .main .content .main:last-child {
   padding-bottom: 0;
@@ -543,7 +569,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 369px;
   margin: 6px 0 10px 215px;
   padding: 0 3em 0.5em 6px;
-  color: #006bc7 !important;
+  color: #4761c4 !important;
   font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
@@ -565,11 +591,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #006bc7;
+  color: #4761c4;
   text-decoration: none;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #003461;
+  color: #283a7d;
 }
 
 .container-setup, .subnav, .text, .button, .form {
