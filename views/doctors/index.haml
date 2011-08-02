@@ -1,5 +1,5 @@
 - @sub0 = ["Doctors", "doctors"]
-- @sub1 = ["Dr. Frank Ponce", "#ponce"]
+- @sub1 = ["Dr. Frank Ponce III", "#ponce"]
 - @sub2 = ["Dr. No", "no"]
 - @sub3 = ["sssss", "sssss"]
 
@@ -12,10 +12,10 @@
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
 
-#two.banner
-  .center
-    .content
-      %img.banner{:alt => "", :src => "/images/banner-2.jpg"}
+/ #two.banner
+/   .center
+/     .content
+/       %img.banner{:alt => "", :src => "/images/banner-2.jpg"}
 
 
 
@@ -35,11 +35,7 @@
             %p
               %a{:href => "#"+@sub2[1]}
                 =@sub2[0]
-          .link
-            %h5 
-            %p
-              %a{:href => "#"+@sub3[1]}
-                =@sub3[0]
+
         .text
           %h1 Text Sidebar
           %h3 Subtitle Text
@@ -63,14 +59,70 @@
             %img{:src => "images/two-1.jpg"}
             %h1=@sub1[0]
             %p
-              %b Subhead Text 
+              Birthplace: Washington, DC
               %br
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
-            %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            %p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. 
+              Marital Status: Married to Yana Giselle Ponce
+              %br
+              Hobbies: Boating, golfing, skiing, billiards, watching college basketball
             %p
-              %b Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
-        
+              %b Board Certification:
+              %br
+              American Board of Family Medicine 2009
+
+            %p
+              Education:
+              %br
+              2006 &ndash; 2009
+              %br
+              San Jacinto Methodist Hospital Family Medicine Residency (Baytown, TX) 
+              %br
+              Chief resident 
+            %p
+              2002 &ndash; 2006 
+              %br
+              Ross University School of Medicine (Dominica)
+              Doctor of Medicine
+            %p
+              1999 &ndash; 2001 
+              %br
+              The George Washington University (Washington, DC)
+              Masters of Public Health in Epidemiology
+            %p
+              1995 &ndash; 1999 
+              %br
+              University of Maryland (College Park, MD) 
+              Bachelor of Science in Neurobiology and Physiology
+            %p
+              1994 &ndash; 1995 
+              %br
+              Villanova University (Villanova, PA) 
+              St. Martin de Porres Academic Scholarship
+            %p
+              %b Hospital Affiliations:
+              %br
+              CHRISTUS St. John's Hospital (Nassau Bay, TX) - Active
+              %br
+              Clear Lake Regional Medical Center (Webster, TX) - Active
+            %p
+              %b Professional Affiliations:
+              %br
+              American Association of Family Physicians (AAFP)
+              %br
+              American Medical Association (AMA)
+              %br
+              Harris County Medical Society (HCMS)
+              %br
+              Texas Academy of Family Physicians (TAFP)
+            %p
+              %b Certifications:
+              %br
+              Advanced Cardiac Life Support (ACLS)
+              %br
+              Advanced Life Support in Obstetrics (ALSO)
+              %br
+              Neonatal Resuscitation Program (NRP)   
+            
+                    
           .spacer
           %a{:name => @sub2[1]}
           .section
@@ -95,9 +147,3 @@
             %p Aliquam tristique, nunc nec bibendum fermentum, metus nunc congue elit, non suscipit mauris mauris in sapien. Vestibulum dictum, massa et pellentesque malesuada, mauris sapien imperdiet enim, eu dictum nisl urna eu tortor. Aliquam sagittis tempor risus.  
             %p Praesent quis porttitor ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar facilisis metus, vitae blandit lacus tincidunt non.
 
-          .spacer
-          %a{:name => @sub3[1]}
-          .section.no-image
-            %h1=@sub3[0]
-            %p.contact-form
-              %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "365", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p6z1/", :width => "100%", :border => "none"}       

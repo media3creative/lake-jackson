@@ -383,7 +383,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .image-slider .center h1 {
   font-family: "EmbedFont-1";
-  margin: 200px 0 0 500px;
+  margin: 200px 0 0 400px;
   padding: 0 30px 0.2em;
   color: #4761c4;
   background: url(/images/tp_bg.png) repeat;
@@ -397,9 +397,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .image-slider .center h3 {
   position: relative;
   top: 0px;
-  margin: 0 0 6px 500px;
+  margin: 0 0 6px 400px;
   padding: 0.4em 30px 0.4em;
-  color: #666666;
+  color: black;
   background: url(/images/tp_bg.png) repeat;
   font-size: 14px;
   font-weight: 200;
