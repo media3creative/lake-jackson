@@ -19,11 +19,10 @@
 	@extend .box
 	#logo1
 		@extend .box
-		position: relative
-		+float-left
-		clear: right
-		left: (15px	+ $v-gap)
-		margin: ($corner-radius * 2) 0 ($corner-radius)
+		position: absolute
+		top: 10px
+		left: (5px	+ $v-gap)
+		margin: 0
 		a
 			display: block
 			margin: 0
@@ -41,17 +40,10 @@
 			
 // NAVMENU
 ul#topnav
-	@extend .clearfix
-	@extend .bg-gradient-primary
-	@extend .box
-	@extend .corner-all
 	font-family: "EmbedFont-1"
-	position: relative
-	//+float-left
-	clear: left
-	width: $inside-width
-	margin: ($corner-radius) auto 0 auto
-	padding: 0 ($corner-radius)
+	+float-right
+	margin: -4px ($v-gap) 0 ($logoW + 25px + $h-gap)
+	padding: 0
 	color: $nav-text
 	font-size: 11px
 	letter-spacing: 0.05em
@@ -70,17 +62,19 @@ ul#topnav li a
 
 ul#topnav a.topnav
 	@extend .box
-	width: $nav-width
-	margin: 0
-	padding: 15px 0
-	color: inherit
-	font-size: 13px
-	text-align: center
+	margin: 0px 0.7em 0
+	padding: 10px 10px 4px 10px
+	font-size: 14px
+	text-align: left
 	text-transform: uppercase
+	letter-spacing: .1em
+	background: transparent
+	border-top: 4px solid transparent
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
 	color: $nav-text-hover
-	background: url("../images/nav_bg.png") repeat
+	border-top: 4px solid $nav-lines
+	
  
 ul#topnav li .sub 
 	@extend .corner-bottom
@@ -144,5 +138,4 @@ body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a
 	@extend .navigation-hover
 
 .navigation-hover
-	//@extend .bg-gradient-secondary
-	color: $nav-text-hover
+	border-top: 4px solid $nav-lines

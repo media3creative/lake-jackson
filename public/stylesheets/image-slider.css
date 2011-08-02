@@ -379,7 +379,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
 }
 .image-slider .center {
-  padding: 30px 0 15px;
+  padding: 0 0 15px;
 }
 .image-slider .center h1 {
   font-family: "EmbedFont-1";

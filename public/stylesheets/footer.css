@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, #footer .center .content .column a {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -144,7 +144,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, #footer .center .content {
+.corner-all {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -183,7 +183,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, #footer .center, #footer .center .content .column {
+.box, .center-container, #footer .center, #footer .center .content .row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -230,7 +230,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, #footer .center .content .column a {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -360,7 +360,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, #footer .center .content {
+.corner-all {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -374,9 +374,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 #footer .center {
-  font-family: "EmbedFont-1";
+@embed .font-base;
   margin: 0 auto;
-  padding: 15px 0 30px;
+  padding: 15px 0 60px;
 }
 #footer .center .content {
 @extent .box;
@@ -384,38 +384,47 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
   padding: 0;
   height: 100px;
+  border-top: 1px solid #dddddd;
 }
-#footer .center .content .column {
+#footer .center .content .row {
   position: relative;
-  display: inline;
-  float: left;
-  width: 150px;
-  margin: 10px 0 24px 24px;
-  padding: 0 15px 15px 0;
+  width: 900px;
+  margin: 3px auto;
+  padding: 0;
   background: transparent;
-  border-right: 1px solid #dddddd;
+  text-align: center;
 }
-#footer .center .content .column:last-child {
+#footer .center .content .row:last-child {
   border-right: none;
 }
-#footer .center .content .column h4 {
-  font-family: "EmbedFont-1";
+#footer .center .content .row p {
+@embed .font-base;
   position: relative;
   margin: 0 0 0.5em 0;
   color: #666666;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 200;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;
 }
-#footer .center .content .column a {
-  display: block;
+#footer .center .content .row p.logo-sm {
+  margin-bottom: -6px;
+}
+#footer .center .content .row a {
+@embed .font-base;
+  display: inline;
   margin: 0 0 0.3em 0;
   color: #666666;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 200;
   text-decoration: none;
 }
-#footer .center .content .column a:hover {
-  color: #4761c4;
+#footer .center .content .row a:hover {
+  color: #be1e2d;
+}
+#footer .center .content .row a img.icon {
+  width: 15px;
+  height: 15px;
+  margin: -2px 1px 0 7px;
+  vertical-align: middle;
 }
