@@ -14,7 +14,7 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -183,7 +183,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -202,6 +202,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .contact-form iframe, .form iframe {
   position: relative;
   top: -38px;
+}
+
+span {
+  font-size: 12px !important;
+  color: #283a7d !important;
 }
 
 p {
@@ -230,7 +235,7 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
+.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
@@ -578,6 +583,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   letter-spacing: 0.05em;
   border-bottom: 1px solid #efefef;
 }
+.main .content .section h2, .main .content .main h2 {
+  width: 584px;
+  margin: 6px 0 0 0;
+  padding: 0 0 0 6px;
+  color: #666666;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.7em;
+}
 .main .content .section p, .main .content .main p {
   width: 584px;
   margin: 6px 0 10px 0;
@@ -597,6 +612,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
   color: #283a7d;
+}
+
+p.hide {
+  font-size: 11px !important;
+}
+
+p.sm {
+  font-size: 11px !important;
+}
+
+a > h2 {
+  cursor: pointer;
 }
 
 .container-setup, .subnav, .text, .button, .form {

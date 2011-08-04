@@ -232,6 +232,17 @@
 				word-spacing: .1em
 				letter-spacing: .05em
 				border-bottom: 1px solid $section-lines
+			h2
+				@extend .font-base
+				@extend .box
+				width: ($content-width)
+				margin: $corner-radius 0 0 0
+				padding: 0 0 0 $corner-radius
+				color: $section-text
+				font-size: 13px
+				font-weight: bold
+				text-align: justify
+				line-height: 1.7em
 			p
 				@extend .font-base
 				@extend .box
@@ -250,6 +261,15 @@
 					text-decoration: none
 					&:hover
 						color: $primary
+						
+p.hide
+	font-size: 11px !important
+
+p.sm
+	font-size: 11px !important
+
+a>h2
+	cursor: pointer
 
 .container-setup
 	@extend .box

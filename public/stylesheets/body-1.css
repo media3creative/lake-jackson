@@ -204,6 +204,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: -38px;
 }
 
+span {
+  font-size: 12px !important;
+  color: #283a7d !important;
+}
+
 p {
   font-size: inherit;
   color: inherit;
@@ -389,12 +394,15 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .body .center .content .left a.container {
   margin: 0px 29px 0 0;
+  background: url(/images/home_left.jpg) center right no-repeat;
 }
 .body .center .content .middle a.container {
   margin: 0px 29px 0 0;
+  background: url(/images/home_center.jpg) bottom right no-repeat;
 }
 .body .center .content .right a.container {
   margin: 0;
+  background: url(/images/home_right.jpg) bottom right no-repeat;
 }
 
 .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
@@ -403,7 +411,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 280px;
   height: 200px;
-  background: #efefef;
   border: 1px solid #dddddd;
   z-index: 20;
 }
@@ -421,9 +428,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
   position: absolute;
-  top: 75px;
+  top: 100px;
   left: 22.5px;
-  margin: 0 76px 12px 0;
+  margin: 0 126px 12px 0;
   color: #666666;
   font-size: 12px;
   font-weight: 200;
