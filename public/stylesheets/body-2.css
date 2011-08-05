@@ -157,16 +157,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.clearfix, .body, .body .center, .sidebar, .link, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .button, .form, .columns, .spacer {
+.clearfix, .body, .body .center, .sidebar, .link, .button .pdf, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .button, .form, .columns, .spacer {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .button:before, .form:before, .columns:before, .spacer:before {
+.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .button .pdf:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .button:before, .form:before, .columns:before, .spacer:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .button:after, .form:after, .columns:after, .spacer:after {
+.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .button .pdf:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .button:after, .form:after, .columns:after, .spacer:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -183,7 +183,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: white;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .button .pdf, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -535,6 +535,40 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-weight: 200;
   text-transform: uppercase;
   text-decoration: none;
+}
+.button .pdf {
+  position: relative;
+  width: 232px;
+  margin: 0 auto 15px;
+  padding: 0;
+}
+.button .pdf a img {
+  position: relative;
+  display: inline;
+  float: left;
+  clear: left;
+  width: 25px;
+  height: 25px;
+  margin: 0 6px 3px -3px;
+}
+.button .pdf a p {
+  position: relative;
+  display: inline;
+  float: left;
+  clear: right;
+  top: 2px;
+  margin: 0 auto 15px;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.7em;
+}
+.button .pdf a p:last-child {
+  margin-bottom: 15px;
+}
+.button .pdf a:hover p {
+  color: #be1e2d;
 }
 
 .form iframe {

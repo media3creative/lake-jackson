@@ -4,6 +4,9 @@
 
 - @sub0 = ["Services", "/services"]
 - @sub1 = ["Services We Provide", "#services"]
+- @sub2 = ["Get Personalized, Quality Care", "#care"]
+- @sub3 = ["Insurance", "#insurance"]
+- @sub4 = ["Out of Pocket", "#outofpocket"]
 
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
@@ -22,219 +25,234 @@
     .content
       #four.main
         .content
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p At Lake Jackson Family Clinic, you can count on personal and professional care. Our healthcare providers will listen carefully to what you have to say, take time to conduct a thorough exam, and explain everything clearly, making sure you understand why you're not feeling well and what to do when you get home. Our providers are extra understanding with our littlest patients, and skilled in helping children and their parents feel at ease during the exam.
+
+            %p Our board-certified Family Nurse Practitioners and Physician Assistants actively listen to each of our patients' needs, conduct thorough examinations, and provide individualized diagnoses and treatment plans. They can even write the prescriptions you may need. In addition, they possess the expertise and rigorous training you'd expect when seeking high-quality healthcare for you and your family. 
+          .spacer
+
+            
+
           %a{:name => @sub1[1]}
-            .section.no-image
-              %h1=@sub1[0]
-              %p Click each section to expand information.
+          .section.no-image
+            %h1=@sub1[0]
+            %p Click each section to expand information.
 
-              %a{:name => "hide1", :onclick => "return toggleMe('hide1')"}
-                %h2 Vaccines >
-              #hide1{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Flu (Seasonal and Preservative Free)
-                  ages 2+
-                  %br
-                  %span &mdash; GARDASIL&reg; series (HPV)
-                  ages 11-26
-                  %br
-                  %span &mdash; Hepatitis A series
-                  ages 7+
-                  %br
-                  %span &mdash; Hepatitis B series
-                  ages 7+
-                  %br
-                  %span &mdash; Menactra (Meningitis)
-                  ages 11-55
-                  %br
-                  %span &mdash; MMR (Measles, Mumps, Rubella)
-                  ages 7+
-                  %br
-                  %span &mdash; PPV (Pneumonia)
-                  ages 65+, ages 19 - 64 who smoke or have asthma, ages 7+ with long-term health conditions
-                  %br
-                  %span &mdash; Tdap (Tetanus, Diphtheria, Pertussis)
-                  ages 11-64
-                  %br
-                  %span &mdash; Td (Tetanus Booster)
-                  ages 7+
-                  %br
-                  %span &mdash; Varicella series (Chicken Pox)
-                  *ages 7+
-                  %br
-                  %span &mdash; Zostavax (Shingles)
-                  ages 50+
-                %p.sm
-                  Check vaccine availability at a location near you.
-                %p.sm
-                  *The Varicella (Chicken Pox) vaccine may need to be ordered upon request. Please check vaccine availability at a location near you. If vaccine availability indicates that the Varicella vaccine must be ordered, please visit your nearest Take Care Clinic to request the vaccine.  
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Show/Hide
+            %a{:name => "hide1", :onclick => "return toggleMe('hide1')"}
+              %h2 Vaccines >
+            #hide1{:style => "display:none"}
+              %p.sm
+                %span &mdash; Flu (Seasonal and Preservative Free)
+                ages 2+
+                %br
+                %span &mdash; Hepatitis A series
+                ages 7+
+                %br
+                %span &mdash; Hepatitis B series
+                ages 7+
+                %br
+                %span &mdash; Menactra (Meningitis)
+                ages 11-55
+                %br
+                %span &mdash; MMR (Measles, Mumps, Rubella)
+                ages 7+
+                %br
+                %span &mdash; PPV (Pneumonia)
+                ages 65+, ages 19 - 64 who smoke or have asthma, ages 7+ with long-term health conditions
+                %br
+                %span &mdash; Tdap (Tetanus, Diphtheria, Pertussis)
+                ages 11-64
+                %br
+                %span &mdash; Td (Tetanus Booster)
+                ages 7+
+                %br
+                %span &mdash; Varicella series (Chicken Pox)
+                *ages 7+
+                %br
+                %span &mdash; Zostavax (Shingles)
+                ages 50+
+              %p.sm
+                Check vaccine availability at a location near you.
+              %p.sm
+                *The Varicella (Chicken Pox) vaccine may need to be ordered upon request. Please check vaccine availability at a location near you. If vaccine availability indicates that the Varicella vaccine must be ordered, please visit your nearest Take Care Clinic to request the vaccine.  
+              %p.hide
+                %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Show/Hide
 
 
-              %a{:name => "hide2", :onclick => "return toggleMe('hide2')"}
-                %h2 Physicals* >
-              #hide2{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Camp Physicals
-                  %br
-                  %span &mdash; School Physicals
-                  %br
-                  %span &mdash; Sports Physicals
-                  %br
-                  %span &mdash; Additional physicals vary by area
-                %p.sm *Patients who have had a physical at Take Care Clinic within the past year and only need an additional form completed will be charged $15. Patients who need a physical completed for more than one program will be charged an additional $15 per program.
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide2')", :href => "#hide2"}^ Show/Hide
+            %a{:name => "hide2", :onclick => "return toggleMe('hide2')"}
+              %h2 Physicals* >
+            #hide2{:style => "display:none"}
+              %p.sm
+                %span &mdash; Camp Physicals
+                %br
+                %span &mdash; School Physicals
+                %br
+                %span &mdash; Sports Physicals
+                %br
+                %span &mdash; Additional physicals vary by area
+              %p.sm *Patients who have had a physical at Take Care Clinic within the past year and only need an additional form completed will be charged $15. Patients who need a physical completed for more than one program will be charged an additional $15 per program.
+              %p.hide
+                %a{:onclick => "return toggleMe('hide2')", :href => "#hide2"}^ Show/Hide
 
-              %a{:name => "hide3", :onclick => "return toggleMe('hide3')"}
-                %h2 Screenings >
-              #hide3{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Blood Pressure Screening
-                  %br
-                  %span &mdash; Health Screening with Health Risk Assessment
-                  ages 18+
-                  %br
-                  %span &mdash; Health Screening
-                  ages 18+
-                  %br
-                  %span &mdash; Influenza A and B Testing*
-                  %br
-                  %span &mdash; PPD/Tuberculosis Testing
-                %p.sm *Cannot be purchased separately; may only be given as part of a paid exam
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide3')", :href => "#hide3"}^ Show/Hide
+            %a{:name => "hide3", :onclick => "return toggleMe('hide3')"}
+              %h2 Screenings >
+            #hide3{:style => "display:none"}
+              %p.sm
+                %span &mdash; Blood Pressure Screening
+                %br
+                %span &mdash; Health Screening with Health Risk Assessment
+                ages 18+
+                %br
+                %span &mdash; Health Screening
+                ages 18+
+                %br
+                %span &mdash; Influenza A and B Testing*
+                %br
+                %span &mdash; PPD/Tuberculosis Testing
+              %p.sm *Cannot be purchased separately; may only be given as part of a paid exam
+              %p.hide
+                %a{:onclick => "return toggleMe('hide3')", :href => "#hide3"}^ Show/Hide
 
-              %a{:name => "hide4", :onclick => "return toggleMe('hide4')"}
-                %h2 Illnesses >
-              #hide4{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Allergies - Seasonal
-                  %br
-                  %span &mdash; Bladder Infections/Urinary Tract Infections
-                  females ages 6+
-                  %br
-                  %span &mdash; Breathing Treatments with Nebulizer
-                  ages 2+
-                  %br
-                  %span &mdash; Bronchitis
-                  %br
-                  %span &mdash; Cold, Cough and Flu
-                  %br
-                  %span &mdash; Diarrhea, Nausea and Vomiting
-                  %br
-                  %span &mdash; Ear Infections
-                  %br
-                  %span &mdash; Early Lyme Disease
-                  %br
-                  %span &mdash; Fever
-                  %br
-                  %span &mdash; Laryngitis
-                  %br
-                  %span &mdash; Mononucleosis (Mono)
-                  %br
-                  %span &mdash; Pink Eye and Styes
-                  %br
-                  %span &mdash; Sinus Infections
-                  %br
-                  %span &mdash; Sore Throat/Strep Throat
-                  %br
-                  %span &mdash; Swimmer's Ear
-                  %br
-                  %span &mdash; Upper Respiratory Infections
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide4')", :href => "#hide4"}^ Show/Hide
+            %a{:name => "hide4", :onclick => "return toggleMe('hide4')"}
+              %h2 Illnesses >
+            #hide4{:style => "display:none"}
+              %p.sm
+                %span &mdash; Allergies - Seasonal
+                %br
+                %span &mdash; Bladder Infections/Urinary Tract Infections
+                females ages 6+
+                %br
+                %span &mdash; Breathing Treatments with Nebulizer
+                ages 2+
+                %br
+                %span &mdash; Bronchitis
+                %br
+                %span &mdash; Cold, Cough and Flu
+                %br
+                %span &mdash; Diarrhea, Nausea and Vomiting
+                %br
+                %span &mdash; Ear Infections
+                %br
+                %span &mdash; Early Lyme Disease
+                %br
+                %span &mdash; Fever
+                %br
+                %span &mdash; Laryngitis
+                %br
+                %span &mdash; Mononucleosis (Mono)
+                %br
+                %span &mdash; Pink Eye and Styes
+                %br
+                %span &mdash; Sinus Infections
+                %br
+                %span &mdash; Sore Throat/Strep Throat
+                %br
+                %span &mdash; Swimmer's Ear
+                %br
+                %span &mdash; Upper Respiratory Infections
+              %p.hide
+                %a{:onclick => "return toggleMe('hide4')", :href => "#hide4"}^ Show/Hide
 
-              %a{:name => "hide5", :onclick => "return toggleMe('hide5')"}
-                %h2 Minor Injuries >
-              #hide5{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Abrasions
-                  %br
-                  %span &mdash; Animal Bites (limited)
-                  %br
-                  %span &mdash; Burns (minor)
-                  %br
-                  %span &mdash; Minor Cut Closure with Skin Adhesive
-                  %br
-                  %span &mdash; Splinter Removal
-                  %br
-                  %span &mdash; Sprains/Strains
-                  %br
-                  %span &mdash; Staple/Suture Removal
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide5')", :href => "#hide5"}^ Show/Hide
+            %a{:name => "hide5", :onclick => "return toggleMe('hide5')"}
+              %h2 Minor Injuries >
+            #hide5{:style => "display:none"}
+              %p.sm
+                %span &mdash; Abrasions
+                %br
+                %span &mdash; Animal Bites (limited)
+                %br
+                %span &mdash; Burns (minor)
+                %br
+                %span &mdash; Minor Cut Closure with Skin Adhesive
+                %br
+                %span &mdash; Splinter Removal
+                %br
+                %span &mdash; Sprains/Strains
+                %br
+                %span &mdash; Staple/Suture Removal
+              %p.hide
+                %a{:onclick => "return toggleMe('hide5')", :href => "#hide5"}^ Show/Hide
 
-              %a{:name => "hide6", :onclick => "return toggleMe('hide6')"}
-                %h2 Skin Conditions >
-              #hide6{:style => "display:none"}
-                %p.sm
-                  %span &mdash; Acne
-                  %br
-                  %span &mdash; Athlete's Foot
-                  %br
-                  %span &mdash; Chicken Pox
-                  %br
-                  %span &mdash; Cold Sores
-                  %br
-                  %span &mdash; Dry/Itchy Skin
-                  %br
-                  %span &mdash; Head Lice
-                  %br
-                  %span &mdash; Impetigo
-                  %br
-                  %span &mdash; Poison Ivy/Poison Oak
-                  %br
-                  %span &mdash; Ringworm
-                  %br
-                  %span &mdash; Scabies
-                  %br
-                  %span &mdash; Shingles
-                  %br
-                  %span &mdash; Skin Infections
-                  %br
-                  %span &mdash; Skin Irritations (Contact Dermatitis)
-                  %br
-                  %span &mdash; Skin Rashes
-                  %br
-                  %span &mdash; Skin Tag Removal
-                  %br
-                  %span &mdash; Sunburn
-                  %br
-                  %span &mdash; Swimmer's Itch
-                  %br
-                  %span &mdash; Tick/Insect Bites
-                  %br
-                  %span &mdash; Wart Removal
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide6')", :href => "#hide6"}^ Show/Hide
+            %a{:name => "hide6", :onclick => "return toggleMe('hide6')"}
+              %h2 Skin Conditions >
+            #hide6{:style => "display:none"}
+              %p.sm
+                %span &mdash; Acne
+                %br
+                %span &mdash; Athlete's Foot
+                %br
+                %span &mdash; Chicken Pox
+                %br
+                %span &mdash; Cold Sores
+                %br
+                %span &mdash; Dry/Itchy Skin
+                %br
+                %span &mdash; Head Lice
+                %br
+                %span &mdash; Impetigo
+                %br
+                %span &mdash; Poison Ivy/Poison Oak
+                %br
+                %span &mdash; Ringworm
+                %br
+                %span &mdash; Scabies
+                %br
+                %span &mdash; Shingles
+                %br
+                %span &mdash; Skin Infections
+                %br
+                %span &mdash; Skin Irritations (Contact Dermatitis)
+                %br
+                %span &mdash; Skin Rashes
+                %br
+                %span &mdash; Skin Tag Removal
+                %br
+                %span &mdash; Sunburn
+                %br
+                %span &mdash; Swimmer's Itch
+                %br
+                %span &mdash; Tick/Insect Bites
+                %br
+                %span &mdash; Wart Removal
+              %p.hide
+                %a{:onclick => "return toggleMe('hide6')", :href => "#hide6"}^ Show/Hide
 
-              %a{:name => "hide7", :onclick => "return toggleMe('hide7')"}
-                %h2 Health Management >
-              #hide7{:style => "display:none"}
-                %p.sm
-                  %span &mdash; High Blood Pressure Management
-                  %br
-                  %span &mdash; Injection and Infusion Services
-                %p.hide
-                  %a{:onclick => "return toggleMe('hide7')", :href => "#hide7"}^ Show/Hide
+            %a{:name => "hide7", :onclick => "return toggleMe('hide7')"}
+              %h2 Health Management >
+            #hide7{:style => "display:none"}
+              %p.sm
+                %span &mdash; High Blood Pressure Management
+                %br
+                %span &mdash; Injection and Infusion Services
+              %p.hide
+                %a{:onclick => "return toggleMe('hide7')", :href => "#hide7"}^ Show/Hide
+          .spacer
 
+
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p We accept most insurance plans and networks. The copayment for your specific plan will be collected during your visit.
+
+            %p Start by checking the list of insurance plans we accept to see if yours is listed. You may also want to verify your coverage, co-payment, coinsurance and/or deductible by calling your insurance plan directly. You will be asked to present your insurance card and proof of ID at the time of the visit.
+          .spacer
+
+            
+
+          %a{:name => @sub4[1]}
+          .section.no-image
+            %h1=@sub4[0]
+            %p Don't have insurance or have a plan which we do not currently accept? Treatment for common illnesses starts at $79. Fees may be higher, depending on additional tests and procedures, as well as the complexity and length of your visit. If you have a plan which we do not currently accept, we will give you a receipt that you can submit to your insurer for reimbursement if your plan offers out-of-network benefits.
           .spacer
 
               
               
       #four.sidebar.right
-        .text
-          %h1 Text Sidebar
-          %h3 Subtitle Text
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         .button
-          %h1 Button Sidebar
-          %h3 Subtitle Text
-          %p.link
-            %a{:href => "/path"} Link Text
-        .form
-          %h1 Form Sidebar
-          .contact-form
-            %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "365", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p6z1/", :border => "none"}      
+          %h1 Patient Forms
+          .pdf
+            %a{:href => "/images/form-newpatient.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p New Patient Form (View/Download)

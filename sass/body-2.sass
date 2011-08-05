@@ -181,6 +181,39 @@
 			font-weight: 200
 			text-transform: uppercase
 			text-decoration: none
+	.pdf
+		@extend .box
+		@extend .clearfix
+		position: relative
+		width: ($sidebar-width - (($h-gap - $corner-radius) * 2))
+		margin: 0 auto ($v-gap / 2)
+		padding: 0
+		a
+			img
+				position: relative
+				+float-left
+				clear: left
+				width: 25px
+				height: 25px
+				margin: 0 $corner-radius ($corner-radius / 2) -3px
+			p
+				position: relative
+				+float-left
+				clear: right
+				top: 2px
+				margin: 0 auto ($v-gap / 2)
+				color: $section-text
+				font-size: 12px
+				font-weight: 200
+				text-align: justify
+				line-height: 1.7em
+				&:last-child
+					margin-bottom: ($v-gap / 2)
+			&:hover
+				p
+					color: $secondary
+			
+		
 
 // Button-style sidebar box
 .form
