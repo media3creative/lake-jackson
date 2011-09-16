@@ -3,10 +3,10 @@
 - @body_class = "four"
 
 - @sub0 = ["Services", "/services"]
-- @sub1 = ["Services We Provide", "#services"]
-- @sub2 = ["Get Personalized, Quality Care", "#care"]
-- @sub3 = ["Insurance", "#insurance"]
-- @sub4 = ["Out of Pocket", "#outofpocket"]
+- @sub1 = ["Services We Provide", "services"]
+- @sub2 = ["Get Personalized, Quality Care", "care"]
+- @sub3 = ["Insurance", "insurance"]
+- @sub4 = ["Out of Pocket", "outofpocket"]
 
 
 %link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
@@ -73,16 +73,12 @@
                 %br
                 %span &mdash; Zostavax (Shingles)
                 ages 50+
-              %p.sm
-                Check vaccine availability at a location near you.
-              %p.sm
-                *The Varicella (Chicken Pox) vaccine may need to be ordered upon request. Please check vaccine availability at a location near you. If vaccine availability indicates that the Varicella vaccine must be ordered, please visit your nearest Take Care Clinic to request the vaccine.  
               %p.hide
                 %a{:onclick => "return toggleMe('hide1')", :href => "#hide1"}^ Show/Hide
 
 
             %a{:name => "hide2", :onclick => "return toggleMe('hide2')"}
-              %h2 Physicals* >
+              %h2 Physicals >
             #hide2{:style => "display:none"}
               %p.sm
                 %span &mdash; Camp Physicals
@@ -92,7 +88,6 @@
                 %span &mdash; Sports Physicals
                 %br
                 %span &mdash; Additional physicals vary by area
-              %p.sm *Patients who have had a physical at Take Care Clinic within the past year and only need an additional form completed will be charged $15. Patients who need a physical completed for more than one program will be charged an additional $15 per program.
               %p.hide
                 %a{:onclick => "return toggleMe('hide2')", :href => "#hide2"}^ Show/Hide
 
@@ -108,10 +103,9 @@
                 %span &mdash; Health Screening
                 ages 18+
                 %br
-                %span &mdash; Influenza A and B Testing*
+                %span &mdash; Influenza A and B Testing
                 %br
                 %span &mdash; PPD/Tuberculosis Testing
-              %p.sm *Cannot be purchased separately; may only be given as part of a paid exam
               %p.hide
                 %a{:onclick => "return toggleMe('hide3')", :href => "#hide3"}^ Show/Hide
 
@@ -255,4 +249,25 @@
           .pdf
             %a{:href => "/images/form-newpatient.pdf"}
               %img{:src => "/images/PDF.png"}
-              %p New Patient Form (View/Download)
+              %p New Patient
+            %a{:href => "/images/form-HIPPA.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p HIPPA Notice of Privacy Practices
+            %a{:href => "/images/form-patientHistory.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p Patient Family History
+            %a{:href => "/images/form-patientInfo.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p Patient Info
+            %a{:href => "/images/form-patientMeds.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p Patient Medications &amp; Illnesses
+            %a{:href => "/images/form-release.pdf"}
+              %img{:src => "/images/PDF.png"}
+              %p Patient Release
+        .text
+          %h1 Patient Resources
+          %p Blah
+        .text
+          %h1 Common Illnesses
+          %p Lorem Ipsum
